@@ -1,22 +1,28 @@
 <template>
     <div class="banner" style="margin-bottom:12px;">
-        <div class="flex fill content">
-            <div class="flex-one character-info" style="flex:2;align-self:center;">
-                <div class="inline-block text-left" style="padding-left:8px;">
-                    <p>Character</p>
-                    <p>Age</p>
-                    <p>Critical thinking</p>
-                    <p>Small talk</p>
+        <div class="fill content">
+            <div class="fill flex">
+                <div class="flex-one character-info align-center" style="">
+                    <div class="inline-block text-left" style="padding-left:8px;">
+                        <p>Character</p>
+                        <p>Age</p>
+                        <p>Critical thinking</p>
+                        <p>Small talk</p>
+                        <p>Team work</p>
+                        <p>Independence</p>
+                    </div>
+                    <div class="inline-block text-left" style="padding-left:8px; font-weight: 600;align-self:center;">
+                        <p>Julius</p>
+                        <p>{{ time }} days</p>
+                        <p>8 / 10</p>
+                        <p>9 / 10</p>
+                        <p>7 / 10</p>
+                        <p>8 / 10</p>
+                    </div>
                 </div>
-                <div class="inline-block text-left" style="padding-left:8px; font-weight: 600;align-self:center;">
-                    <p>Julius</p>
-                    <p>{{ time }} days</p>
-                    <p>8 / 10</p>
-                    <p>9 / 10</p>
+                <div class="flex-one align-center" style="justify-content:flex-end" >
+                    <img class="portrait" alt="Programmer headshot" src="../assets/headshot.png">
                 </div>
-            </div>
-            <div class="flex-one" style="align-self:center;" >
-                <img class="portrait" alt="Programmer headshot" src="../assets/headshot.png">
             </div>
         </div>
     </div>

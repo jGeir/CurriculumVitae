@@ -1,5 +1,5 @@
 <template>
-    <div style="max-width: 1000px; margin: auto;">
+    <div class="content">
         <job-card company="Advania" title="Software Specialist" duration="Aug 2017 - July 2020" 
             :showAnchor="true"
             techOne="The technical skills that I amassed and improved at Advania headquarters were 

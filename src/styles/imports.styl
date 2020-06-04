@@ -3,7 +3,7 @@
 }
 h3 {
     margin: 0 !important;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 p {
     margin: 0 5px 0 5px;
@@ -35,6 +35,19 @@ p {
     vertical-align: top;
 }
 
+.v-switch-label.v-right {
+    color: #ff236a !important;
+}
+
+.v-switch-label.v-left {
+    color: #f38718e3 !important;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;    
+}
+
 .fill {
     height: 100%;
     width: 100%;    
@@ -59,7 +72,7 @@ p {
 .character-info {
     font-size: 13px;
     line-height: 150%;
-    color: white;
+    color: azure;
     .text-left {
 
     }
@@ -67,16 +80,20 @@ p {
 
 .job {
     border-radius: 4px;
-    padding: 8px 8px 6px 8px;
-    background-color: rgba(20, 20, 20, 0.3);
+    padding: 12px 12px 8px 12px;
+    background-color: rgba(20, 20, 20, 0.6);
     margin-bottom: 16px;
-    color: greenyellow;
+    color: #8D98A7;
 }
 
-.advania {
-    max-height: 82px;
-    max-width: 69px;    
+.job-paragraph{
+    color: azure;
+    text-align: justify;
+    a {
+        color: burlywood;
+    }
 }
+
 .content {
     max-width:1000px; 
     margin:auto
@@ -85,15 +102,15 @@ p {
 .navigation {
     height: 40px;
     width: 22%;
-    display: block;
-    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     background-color: navajowhite;
     border-radius: 8px;
-    margin: 0 0px 12px 0px;
+    margin: 0 0px 12px 8px;
     text-align: center;
     font-weight: 700;
-    margin-left: 8px;
 }
 
 .social {
@@ -102,7 +119,7 @@ p {
     cursor: pointer;
     background-color: navajowhite;
     border-radius: 8px;
-    margin: 0 8px 12px 8px;
+    margin: 0 0px 12px 8px;
     align-self: center;
 
 }
@@ -110,6 +127,16 @@ p {
 .linkedIn {
     height: 24px;    
     margin: 8px 0 8px 0;
+}
+
+.github {
+    height: 34px;
+    margin: 3px 0 3px 0;
+}
+
+.advania {
+    max-height: 82px;
+    max-width: 69px;    
 }
 
 @media only screen and (max-width: 999px)  {
@@ -130,6 +157,20 @@ p {
     }
 }
 
+@media only screen and (max-width: 460px)  {
+    .navigation {
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .linkedIn {
+        height: 14px;
+        margin: 13px 0px 13px 0px;
+    }
+    .github {
+        height: 24px;
+        margin: 8px 0px 8px 0px;
+    }
+}
 
 body {
 
@@ -156,7 +197,7 @@ li {
 }
 
 a {
-  color #42b983
+  color #326984
 }
 
 html {

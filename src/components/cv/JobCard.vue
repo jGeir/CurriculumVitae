@@ -12,8 +12,8 @@
                     @change="flipToggle()"
                     style="align-self:center;"
                     :labels="{checked: 'Description', unchecked: 'Technical'}" 
-                    :switch-color="{checked: '#25EF02', unchecked: 'linear-gradient(red, yellow)'}"
-                    :color="{checked: 'pink', unchecked: 'linear-gradient(green, red)'}"
+                    :switch-color="{checked: 'linear-gradient(yellow, red', unchecked: 'linear-gradient(red, yellow)'}"
+                    :color="{checked: 'navy', unchecked: 'darkolivegreen'}"
                     :value="toggleInfo"
                     :width=130
                     :height=30
@@ -24,7 +24,7 @@
                 <img :class="company" :alt="company" v-bind:src="imgPath" style="" />
             </div>
 
-            <div v-show="!toggleInfo" v-bind:id="company + '-description'" >
+            <div class="job-paragraph" v-show="!toggleInfo" v-bind:id="company + '-description'" >
                 <p>
                     {{ paragraphOne }}
                 </p>
@@ -37,7 +37,7 @@
                     {{ paragraphThree }}
                 </p>
             </div>
-            <div v-show="toggleInfo" v-bind:id="company + '-technical'">
+            <div class="job-paragraph"  v-show="toggleInfo" v-bind:id="company + '-technical'">
                 <p>{{ techOne }}</p>
                 <p>{{ techTwo }}</p>
                 <p>{{ techThree }}</p>
