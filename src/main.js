@@ -12,6 +12,7 @@ Vue.use(moment);
 Vue.prototype.moment = moment
 
 const routes = [
+  { path: '/', component: CV},
   { path: '/CV', component: CV},
   { path: '/About', component: About}
 ]

@@ -4,22 +4,19 @@
             :showAnchor="true"
             techOne="The technical skills that I amassed and improved at Advania headquarters were 
             HTML, CSS, Javascript, jQuery, ASP.Net, XSLT, React"
-            techTwo="While working for Landsbankinn I worked in React, Redux Saga and Typescript."
-            techThree="Orkuveitan tech stack is ASP.Net, so most programming work was done in
-            C#, Javascript, jQuery and mySQL. Later on to release technical debt I was permitted to update the project
-            to run Vue components along with ES5 and ES6, simplifying future work. This particular system was
-            connected to many systems such as CRM and Agresso."
+            techTwo="In my consult work through various companies I worked with React, Redux Saga, Typescript, C#, ASP.net, Javascript, jQuery, mySql and connecting to CRM services.."
+            techThree="I enjoy neat and clean solutions, both in code and visuals."
             paragraphOne="Sold as a consultant to various companies over the years. Having the opportunity to learn
              from many great programmers. Improving knowledge upon technologies and work ethics. 
-             Certified Scrum Master."
+             Becoming a Certified Scrum Master."
             paragraphTwo="I spent eight months in Landsbankinn and our task was to create the front and middle layer
             for an online experience of credit assessment("
             paragraphTwoEnding=") for Landsbankinn. We worked within the Agile Scrum principle."
-            paragraphThree="In my time at Orkuveita Reykjavikur(eighteen months) I worked with variety of technologies
+            paragraphThree="Eighteen months in Orkuveitan led me to work with variety of technologies
             while bearing more responsibility in my career. In a team of five programmers I worked as a team leader 
-            and scrum master, being a link between the business and programmers.
-            While handling the releases, versions, programming the frontend and backend, middle layer connections to other systems.
-            Furthermore not only implementing but also tasked with the redesign of big parts of their inner web.
+            and scrum master, being a link between the business/project owners and programmers.
+            Some of my responsibilities included releasing versions, programming the frontend and backend, middle layer connections to other systems.
+            One larger project was to speed up, redesign and connect to different services on Orkuveitans inner web.
             We worked within the Agile Scrum principle.
             "
         />
@@ -41,8 +38,8 @@
         />
         <job-card company="Listdansskólinn" title="Admin" duration="May 2015 - Oct 2015" :showAnchor="false"
             paragraphOne="Assisting and programming wordpress functionality on an existing website."
-            techOne="This website is made with Wordpress and I quickly learned of the Wordpress limitations.
-            Programming was done in HTML, CSS, PHP."
+            techOne="This website is made with Wordpress.
+            Work was done in HTML, CSS, PHP."
         />
         <job-card company="Tölvuspa" title="CEO, CTO" duration="Jun 2015 - Sep 2015" :showAnchor="false"
             :showToggle="false"

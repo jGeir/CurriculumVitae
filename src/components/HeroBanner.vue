@@ -4,7 +4,7 @@
             <div class="fill flex">
                 <div class="flex-one character-info align-center" style="">
                     <div class="inline-block text-left" style="padding-left:8px;">
-                        <p>Character</p>
+                        <p>Programmer</p>
                         <p>Age</p>
                         <p>Critical thinking</p>
                         <p>Small talk</p>
