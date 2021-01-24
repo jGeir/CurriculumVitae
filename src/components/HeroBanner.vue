@@ -6,18 +6,18 @@
                     <div class="inline-block text-left" style="padding-left:8px;">
                         <p>Programmer</p>
                         <p>Age</p>
-                        <p>Critical thinking</p>
                         <p>Communication</p>
-                        <p>Team work</p>
+                        <p>Critical thinking</p>
                         <p>Independence</p>
+                        <p>Team work</p>
                     </div>
                     <div class="inline-block text-left" style="padding-left:8px; font-weight: 600;align-self:center;">
                         <p>Julius</p>
-                        <p>{{ time }} days</p>
-                        <p>8 / 10</p>
+                        <p>{{ time }}</p>
                         <p>9 / 10</p>
-                        <p>7 / 10</p>
                         <p>8 / 10</p>
+                        <p>8 / 10</p>
+                        <p>7 / 10</p>
                     </div>
                 </div>
                 <div class="flex-one align-center" style="justify-content:flex-end" >
@@ -33,12 +33,43 @@ import moment from 'moment'
 export default {
     data: function () {
         return {
-            birth: moment("01-28-1992 11:30").format('DD MM YYYY hh:mm'),
-            time: moment().diff('1992-01-28 11:30', 'days')
+            availableUnit: [
+                { variable: 'hours' },
+                { variable: 'days' },
+                { variable: 'months' },
+                { variable: 'years' },
+                { variable: 'decades' }
+            ],
+            time: this.timeSinceFormat(),
+            listPos: 1
         }
     },
-    computed: {
-
+    methods: {
+        formatMomentNumber: function(timeUnit) {
+            return new Intl.NumberFormat('is-IS').format(moment().diff('1992-01-28 11:30', timeUnit));
+        },
+        timeSinceFormat: function(timeUnit) {
+            if(timeUnit) {
+                if(timeUnit === 'decades') {
+                    // Decades do not exist in the Moment pack.
+                    this.time = this.formatMomentNumber('years') / 10 + ' decades'
+                    return this.time
+                }
+                this.time =  this.formatMomentNumber(timeUnit) + ' ' + timeUnit
+                return this.time
+            } else {
+                this.time = this.formatMomentNumber('hours') + ' hours'
+                //First time rendering - No parameter - init timeunit interval
+                this.interval = setInterval(() => this.switchTimeUnits(), 3000)
+                return this.time
+            }
+        },
+        switchTimeUnits: function() {
+            this.timeSinceFormat(this.availableUnit[this.listPos].variable)
+            this.listPos++;
+            // End of list check
+            if(this.listPos === 5) this.listPos = 0;
+        }
     }
 }
 </script>

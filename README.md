@@ -7,6 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
+vue ui -> serve
 npm run serve
 ```
 

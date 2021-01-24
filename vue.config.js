@@ -14,11 +14,6 @@ module.exports = {
       }
     },
     devServer: {
-        // https: {
-        //   key: fs.readFileSync("./SSL/private.key.pem"),
-        //   cert: fs.readFileSync("./SSL/public.key.pem"),
-        //   ca: fs.readFileSync("./SSL/domain.cert.pem")
-        // },
         overlay: {
             warnings: true,
             errors: true
