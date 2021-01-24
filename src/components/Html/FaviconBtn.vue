@@ -7,7 +7,6 @@
 
 <script>
 import ExpandableDiv from '../ExpandableDiv.vue';
-//fa-angle-double-down
 export default {
     data: function () {
         return {

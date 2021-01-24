@@ -42,28 +42,11 @@
                 <p>{{ techTwo }}</p>
                 <p>{{ techThree }}</p>
             </div>
-
-
-
-            <!-- <p>
-                {{ mainParagraph }}
-            </p>
-            <p>
-                {{ secondParagraph }}
-                <anchor text="Greiðslumat" href="https://www.landsbankinn.is/einstaklingar/sjalfsafgreidsla/innskraning?greidslumat" />
-                {{ secondParagraphEnding }}
-            </p>
-            <FaviconBtn favicon="fas fa-angle-double-down" title="Landsbankinn Tech stack" :techStack="techStack" />            
-            <p>
-                One and a half year spent in Orkuveita Reykjavík in various projects, roles and positions.
-                
-            </p> -->
         </div>
     </div>
 </template>
 
 <script>
-// import FaviconBtn from '../Html/FaviconBtn.vue';
 import Anchor from '../Html/Anchor.vue'
 import { ToggleButton } from 'vue-js-toggle-button'
 
@@ -100,7 +83,6 @@ export default {
         techThree: String,
     },
     components: {
-        // FaviconBtn,
         Anchor,
         ToggleButton
     },

@@ -7,7 +7,7 @@
                         <p>Programmer</p>
                         <p>Age</p>
                         <p>Critical thinking</p>
-                        <p>Small talk</p>
+                        <p>Communication</p>
                         <p>Team work</p>
                         <p>Independence</p>
                     </div>
@@ -34,7 +34,6 @@ export default {
     data: function () {
         return {
             birth: moment("01-28-1992 11:30").format('DD MM YYYY hh:mm'),
-            //birth: new Date(1992, 28, 1),
             time: moment().diff('1992-01-28 11:30', 'days')
         }
     },
