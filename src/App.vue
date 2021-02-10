@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/headshot.jpg"> -->
     <HeroBanner />
     <div class="flex content" style="justify-content:space-between;">
       <router-link class="navigation" to="/CV">Curriculum Vitae</router-link>
@@ -17,22 +16,17 @@
       </div>
       <router-view></router-view>
     </div>
-    <div class="flex content">
-    </div>
   </div>
 </template>
 
 <script>
 import './styles/imports.styl'
-// import Welcome from './components/Welcome.vue'
 import HeroBanner from './components/HeroBanner.vue'
 
 export default {
   name: 'App',
   components: {
     HeroBanner,
-
-    // Welcome
   }
 }
 </script>

@@ -13,11 +13,11 @@
                     style="align-self:center;"
                     :labels="{checked: 'Description', unchecked: 'Technical'}" 
                     :switch-color="{checked: 'linear-gradient(yellow, red', unchecked: 'linear-gradient(red, yellow)'}"
-                    :color="{checked: 'navy', unchecked: 'darkolivegreen'}"
+                    :color="{checked: 'navajowhite', unchecked: '#326984'}"
                     :value="toggleInfo"
                     :width=130
                     :height=30
-                    :font-size=16
+                    :font-size=14
                     :margin=3
                     :sync="true"
                 />
@@ -26,21 +26,18 @@
 
             <div class="job-paragraph" v-show="!toggleInfo" v-bind:id="company + '-description'" >
                 <p>
-                    {{ paragraphOne }}
-                </p>
-                <p>
+                    {{ paragraphOne }} <br>
                     {{ paragraphTwo }}
                     <anchor :isVisible="showAnchor" text="Greiðslumat" href="https://www.landsbankinn.is/einstaklingar/sjalfsafgreidsla/innskraning?greidslumat" />
-                    {{ paragraphTwoEnding}}
-                </p>
-                <p>
+                    {{ paragraphTwoEnding}} <br>
                     {{ paragraphThree }}
                 </p>
+                
             </div>
             <div class="job-paragraph"  v-show="toggleInfo" v-bind:id="company + '-technical'">
-                <p>{{ techOne }}</p>
-                <p>{{ techTwo }}</p>
-                <p>{{ techThree }}</p>
+                <p>{{ techOne }}<br>
+                {{ techTwo }}<br>
+                {{ techThree }}</p>
             </div>
         </div>
     </div>

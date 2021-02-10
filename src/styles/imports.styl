@@ -36,11 +36,11 @@ p {
 }
 
 .v-switch-label.v-right {
-    color: #ff236a !important;
+    color:navajowhite !important;
 }
 
 .v-switch-label.v-left {
-    color: #f38718e3 !important;
+    color: #326984 !important;
 }
 
 .align-center {
@@ -73,9 +73,8 @@ p {
     font-size: 14px;
     line-height: 150%;
     color: azure;
-    .text-left {
-
-    }
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .job {
@@ -149,13 +148,10 @@ p {
     max-width: 69px;    
 }
 
-@media only screen and (max-width: 999px)  {
-
-}
 
 @media only screen and (min-width: 600px)  {
     .character-info {
-        padding-left:5px;
+        padding-left:4px;
         .text-right {
             
             font-weight: 450;
@@ -164,6 +160,19 @@ p {
             margin-left: 5px;
             font-weight: 600;
         }
+    }
+}
+
+
+@media only screen and (max-width: 820px)  {
+    .navigation {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        font-size: 16px;
     }
 }
 
@@ -179,6 +188,12 @@ p {
     .github {
         height: 24px;
         margin: 8px 0px 8px 0px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .flex-one.character-info {
+        flex: 2 1;
     }
 }
 

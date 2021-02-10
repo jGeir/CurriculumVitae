@@ -3,20 +3,22 @@
         <job-card company="Advania" title="Software Specialist" duration="Aug 2017 - July 2020" 
             :showAnchor="true"
             techOne="The technical skills that I amassed and improved at Advania headquarters were 
-            HTML, CSS, Javascript, jQuery, ASP.Net, XSLT, React"
-            techTwo="In my consult work through various companies I worked with React, Redux Saga, Typescript, C#, ASP.net, Javascript, jQuery, mySql and connecting to CRM services.."
+            HTML, CSS, Javascript, jQuery, ASP.Net C#, XSLT, React. "
+            techTwo="In my consultation work through various companies I created with React, Vue, Redux Saga, Typescript, C# ASP.net, Javascript, jQuery and mySql"
             techThree="I enjoy neat and clean solutions, both in code and visuals."
             paragraphOne="Sold as a consultant to various companies over the years. Having the opportunity to learn
-             from many great programmers. Improving knowledge upon technologies and work ethics. 
-             Becoming a Certified Scrum Master."
+             from many great programmers. Improving knowledge, technologies and work ethics. 
+             Becoming a Certified Scrum Master while also taking intro courses into cyber security."
             paragraphTwo="I spent eight months in Landsbankinn and our task was to create the front and middle layer
-            for an online experience of credit assessment("
-            paragraphTwoEnding=") for Landsbankinn. We worked within the Agile Scrum principle."
+            for an online experience of automatic customer credit assessment("
+            paragraphTwoEnding=") for Landsbankinn. We worked within the Agile Scrum principle. React project."
             paragraphThree="Eighteen months in Orkuveitan led me to work with variety of technologies
             while bearing more responsibility in my career. In a team of five programmers I worked as a team leader 
-            and scrum master, being a link between the business/project owners and programmers.
+            and scrum master, being a link between the project owners and programmers.
             Some of my responsibilities included releasing versions, programming the frontend and backend, middle layer connections to other systems.
-            One larger project was to speed up, redesign and connect to different services on Orkuveitans inner web.
+            I was responsible to integrate Vue to an old ASP.net system to reduce technical debt based of my suggestion, it proved beneficial in the developement ahead.
+            One larger project was to speed up, redesign and connect to different services on Orkuveitans inner web, thanks to the newly set up Vue framework in this project
+            I was able to bring a much needed freshness and reactivity to that view.
             We worked within the Agile Scrum principle.
             "
         />
@@ -34,7 +36,7 @@
             All of which would be connected to a database for the teachers of these students to track progress.
             We followed Agile Scrum precisely."
             techOne="We made this project with Unity3D, mostly using C# for coding.
-            We did not need to create our own databases for this project."
+            We did not need to create our own databases for this project but it was AWS based."
         />
         <job-card company="Listdansskólinn" title="Admin" duration="May 2015 - Oct 2015" :showAnchor="false"
             paragraphOne="Assisting and programming wordpress functionality on an existing website."
